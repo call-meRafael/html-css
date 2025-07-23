@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#titulo-principal {
+    color: #DC3522;
+    text-align: center;
+}
+
+.paragrafo-importante {
+    font: bold 20px Arial, Helvetica, sans-serif;
+    color: #000000bb;
+    border: #dc3522c4 2px solid;
+}
+
+.paragrafo-aviso {
+    font: italic 14px Arial, serif;
+    color: #374140;
+    
+}
+
+.paragrafo-aviso:hover {
+    text-align: center;
+    background: linear-gradient(to right, #DC3522, #D9CB9E, #374140, #2A2C2B, #1E1E20);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    /* Adicione as propriedades desejadas aqui */
+}
+
+.paragrafo-aviso span {
+    text-shadow: #1E1E20 1px 1px 1px;
+    color: #DC3522;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+    
+}
+
+article#artigo-1 {
+    background-color: snow;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px black;
+    border-radius: 10px 30px;
+}

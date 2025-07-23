@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title> <!-- Título da página -->
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir este site em vários dispositivos e veja como a imagem se adapta ao tamanho da tela.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pAmarelo.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/mVermelho.png" type="image/png">
+        <img src="imagens/gVerde.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio em HTML5</h1>
+    <p>
+        O HTML5 permite a reprodução de áudio diretamente no navegador.
+    </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/monster.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

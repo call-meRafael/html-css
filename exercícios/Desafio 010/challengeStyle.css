@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    pointer-events: none;
+
+
+
+
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin: ;
+
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin-top: 40px;
+    
+}
+
+nav a:hover {
+    width: auto;
+    background: rgba(128, 128, 128, 0.336);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.7s;
+}

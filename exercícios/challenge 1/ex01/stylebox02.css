@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Varsity_regular.ttf';
+    src: url('fonts/varsity_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Varsity_regular.ttf', serif;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 2px lightslategray;
+}
+
+nav {
+    background-color: lightslategray;
+    box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+nav a {
+    background-color: lightslategray;
+    color: aliceblue;
+    margin-right: 32px;
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: lightslategray;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    width: 9%;
+    padding: 4px;
+}
+
+footer p {
+    margin: 0px;
+    font-style: italic;
+    font-size: 0.8em;
+}

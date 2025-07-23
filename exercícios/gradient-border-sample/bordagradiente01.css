@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0e2136;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa{
+    background: #142d4a;
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    position: relative
+}
+
+@property --deg{
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+}
+
+.caixa::before,
+.caixa::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+        from var(--deg) at center,
+        #00c3ff,
+        #4d0199,
+        #6300C6,
+        #009dcd
+    );
+    border-radius: inherit;
+    z-index: -2;
+    padding: 2px;
+    animation: autorotate 2s linear infinite;
+}
+
+.caixa::after{
+    filter: blur(10px);
+}
+
+@keyframes autorotate{
+    to{
+        --deg: 360deg;
+    }
+}

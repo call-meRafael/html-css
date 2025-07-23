@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Moderna";
+    src: url('fontes/moderna_.TTF') format('truetype'); 
+}
+
+@font-face {
+    font-family: "modern-king";
+    src: url('fontes/Modern-King.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "modern-deco";
+    src: url('fontes/modern-deco.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "modern-serif";
+    src: url('fontes/Modern-Serif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "modern-antiqua";
+    src: url('fontes/ModernAntiqua-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "modern-sans-serif";
+    src: url('fontes/modern_sans_serif_7.ttf') format('truetype');
+}
+
+body {
+    font-family: var(--fonte-padrao-02);
+    background-color: var(--cor01);
+}
+
+:root {
+    --cor01: #ADD5F7;
+    --cor02: #7FB2F0;
+    --cor03: #4E7AC7;
+    --cor04: #35478C;
+    --cor05: #16193B;
+    --cor06: #25064D;
+
+    --fonte-padrao: "Moderna", sans-serif;
+    --fonte-padrao-01: "modern-king", sans-serif;
+    --fonte-padrao-02: "modern-deco", sans-serif;
+    --fonte-padrao-serif: "modern-serif", serif;
+    --fonte-padrao-antiqua: "modern-antiqua", sans-serif;
+    --fonte-padrao-sans-serif: "modern-sans-serif", sans-serif;
+}
+
+
+header {
+    background-image: linear-gradient(to right, var(--cor04), var(--cor05));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.61);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 6px 4px rgba(0, 0, 139, 0.596);
+}
+
+
+
+nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 25px;
+    padding: 15px;
+    
+}
+
+nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--fonte-padrao-antiqua);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.541);
+    border-bottom: 2px solid transparent;
+    
+}
+
+nav ul li a:hover {
+    background-color: var(--cor02);
+    border-radius: 5px 10px 5px 10px;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.7s ease-in-out;
+}
+
+main section {
+    background-color: #35478C;
+    width: 60%;
+    margin-top: 45px;
+    padding: 15px;
+    float: right;
+}
+
+main aside {
+    background-color: var(--cor04);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    margin-top: 45px;
+    box-shadow: 1px 1px 4px darkblue;
+}
+
+main aside h3 {
+    color: white;
+    text-shadow: 1px 2px 2px var(--cor05);
+    font-family: var(--fonte-padrao-antiqua);
+    font-size: 1.4em;
+}
+
+main aside ul li {
+    list-style-type: inside;
+}

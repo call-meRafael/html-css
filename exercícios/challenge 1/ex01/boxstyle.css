@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: #d9cb9e;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    background: linear-gradient(to right, #DC3522, #374140, #1E1E20);
+    padding: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-right: 32px;
+    text-shadow: #1E1E20 1px 1px 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #d9cb9e;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #374140;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px #DC3522;
+    padding: 1px;
+    margin: 0px;
+}
+
+article {
+    background-color: #1E1E20;
+    padding: 8px;
+    margin: 2px;
+    border: 1px solid #DC3522;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #DC3522;
+}
+
+article aside {
+    background-color: #d9cb9e;
+   
+}
+
+article aside p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #1E1E20;
+    text-indent: 5px;
+}
+
+article h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 2em;
+}
+
+article p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.897);
+}

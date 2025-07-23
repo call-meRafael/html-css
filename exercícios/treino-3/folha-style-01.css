@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family:"modern-sans-serif";
+    src: url('fontes/modern_sans_serif_7.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "modernise";
+    src: url('fontes/ModerniseDemoRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "antiqua";
+    src: url('fontes/ModernAntiqua-Book.ttf') format('truetype');
+}
+
+:root {
+    --cor01: #F2EDE4;
+    --cor02: #D9D1C7;
+    --cor03: #8C8681;
+    --cor04: #666A73;
+    --cor05: #2F3540;
+
+    --fonte-padrao: "modern-sans-serif", sans-serif;
+    --fonte-titulo: "modernise", cursive;
+    --fonte-extra: "antiqua", sans-serif;
+}
+
+body {
+    background-color: var(--cor03);
+    font-family: var(--fonte-padrao);
+
+}
+
+header {
+    background-color: var(--cor05);
+    color: var(--cor01);
+    
+
+
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.651);
+}
+
+header p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    background-color: var(--cor03);
+    display: flex;
+    gap: 55px;
+    font-family: var(--fonte-extra);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.541);
+    font-style: bolder;
+    font-size: 1.5em;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor02);
+    padding: 2px 12px 2px 12px;
+    
+
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    padding: 2px 12px 2px 12px;
+    border-radius: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+main {
+    background-color: var(--cor01);
+    
+}
+
+
+
+.imagem-article {
+    width: auto;
+    height: auto;
+    float: right;
+    box-shadow: 1px 1px 5px black;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+div.conteudo-artigo {
+    
+}
