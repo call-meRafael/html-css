@@ -8,6 +8,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "android-sub";
+    src: url(fontes/Android-101.otf) format('opentype');
+    font-weight: normal;
+}
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83E1ad;
@@ -19,6 +25,7 @@
     --fonte-padrao: Arial, Verdana,  Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
+    --fonte-android-sub: 'android-sub', cursive;
 }
 
 * {
@@ -162,13 +169,13 @@ div.video > iframe {
 
 main h1 {
     color: var(--cor5);
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-android), var(--fonte-android-sub);
     font-weight: normal;
     font-size: 1.8em;
 }
 
 main h2 {
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-android), var(--fonte-android-sub);
     color: var(--cor4);
     text-indent: 8px;
     font-weight: normal;
