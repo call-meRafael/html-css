@@ -18,7 +18,7 @@
 
     --fonte-padrao: Arial, Verdana,  Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-andorid: 'Android', cursive;
+    --fonte-android: 'Android', cursive;
 }
 
 * {
@@ -162,13 +162,13 @@ div.video > iframe {
 
 main h1 {
     color: var(--cor5);
-    font-family: var(--fonte-andorid);
+    font-family: var(--fonte-android);
     font-weight: normal;
     font-size: 1.8em;
 }
 
 main h2 {
-    font-family: var(--fonte-andorid);
+    font-family: var(--fonte-android);
     color: var(--cor4);
     text-indent: 8px;
     font-weight: normal;
