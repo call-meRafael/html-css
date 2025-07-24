@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: system-ui, -apple-system, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #111;
+   background-color: #fff;
+   padding: 2rem;
+}
+
+.enterprise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/0.4;
+    
+    background-color: cornflowerblue;
+    background: url(imagens/wallpaper002.jpg) center/cover no-repeat;
+}
+
+.enterprise h1 {
+    font-size: 8vw; /* sempre mostrará 8% da largura da viewport */ 
+    line-height: 1.25;
+    font-weight: 800;
+    text-transform: uppercase; /* transformar em maiúsculas */
+    padding: 1rem 2rem;
+    background-color: #fff;
+    outline: 4px solid;
+    outline-offset: -10px;
+    mix-blend-mode: lighten;
+}
+
+.enterprise01 {
+    text-align: center;
+    background: url(imagens/wallpaper002.jpg) center/cover no-repeat;
+}
+
+.enterprise01 h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 11vw; /* sempre mostrará 11% da largura da viewport */
+    letter-spacing: 1px; /* espaçamento entre letras */
+    line-height: 1.5;
+    font-weight: 800;
+    text-transform: uppercase; /* transformar em maiúsculas */
+    color: #000;
+    background-color: #fff;
+    mix-blend-mode: lighten;
+
+}
