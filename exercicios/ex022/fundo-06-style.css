@@ -2,13 +2,17 @@
 
 body {
     height: 100vh;
-    background-color: black;
-    background: url(imagens/wallpaper002.jpg) center/cover no-repeat;
+    /*background-color: #fff;
+    background: url(imagens/wallpaper002.jpg) center/cover no-repeat fixed; /* shorthand para background-image, background-position, background-size, background-repeat, background-attachment */
+    
+    
+
+    background: black url(imagens/wallpaper002.jpg) center/cover no-repeat fixed;
 }
 
 main {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid darkblue;
