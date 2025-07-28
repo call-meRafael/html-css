@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh;
+    background-color: black;
+    background: url(imagens/wallpaper002.jpg) center/cover no-repeat;
+}
+
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
