@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Treino</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: sans-serif;
+        }
+
+        .galeria{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            
+            row-gap: 20px;
+            column-gap: 20px;
+            padding: 20px;
+
+        }
+
+        .card{
+            background-color: #3498db;
+            color: white;
+            width: 200px;
+            height: 150px;
+            font-size: 2rem;
+            border-radius: 10px;
+            flex-grow: 1;
+
+        }
+        .card:nth-child(7) {
+            background-color: #2ecc71;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="galeria">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+        <div class="card">7</div>
+    </section>
+</body>
+</html>
