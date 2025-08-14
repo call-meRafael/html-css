@@ -39,12 +39,10 @@
 
     <script>
         
-        function mudouTamanho() {
-            if (window.innerwidth >= 768) {
-                items.style.display = 'block'
-            } else {
-                items.style.display = 'none'
-            }
+        function updateMenuDisplay() {
+            const screenWidth = window.innerWidth;
+            const displayStyle = screenWidth >= 768 ? 'block' : 'none';
+            items.style.display = displayStyle;
         }
 
         function clickMenu() {
