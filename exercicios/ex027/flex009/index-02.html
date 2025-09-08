@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: cornflowerblue;
+
+            display: flex;
+            width: 600px;
+            
+        }
+
+
+
+        /* --- na shorthand flex, temos a sequencia grow, shrink, basis --- */
+        div.item {
+            background-color: salmon;
+            border: 1px solid black;
+            text-align: center;
+            
+            flex-basis: 100px;
+            flex: 1 0 100px;
+            
+        }
+
+        .item:nth-child(2){
+            background-color: cornflowerblue;
+            flex: 2 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item" id="item-02">B</div>
+        <div class="item">C</div>
+        
+    </div>
+</body>
+</html>
