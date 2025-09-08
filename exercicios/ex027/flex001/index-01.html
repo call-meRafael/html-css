@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        
+
+        #frm-01{
+            outline: 2px solid crimson;
+            display: grid;
+            gap: 1rem;
+
+            @media (width > 560px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="frm-01">
+            <label class="flex-item" for="inNome">Nome: </label>
+            <input class="flex-item" type="text" name="nome" id="inNome" placeholder="Nome">
+
+            <label class="flex-item" for="Sexo">Sexo: </label>
+            <input class="flex-item" type="radio" name="gender" id="Sexo" checked> Masculino
+            <input class="flex-item" type="radio" name="gender" id="Sexo"> Feminino
+
+            <label class="flex-item" for="inEmail">E-mail: </label>
+            <input class="flex-item" type="text" name="email" id="inEmail" placeholder="E-mail">
+
+            <label class="flex-item" for="inAltura">Altura: </label>
+            <input class="flex-item" type="number" name="altura" id="inAltura" placeholder="Altura">
+        </form>
+    </div>
+</body>
+</html>
