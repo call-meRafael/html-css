@@ -4,6 +4,8 @@ header {
     padding-block: 12px;
     padding-inline: 24px;
     margin: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.603);
     
 }
 
@@ -34,5 +36,37 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    
+    
+}
+
+@media (width <= 644px) {
+    
+    header h1 {
+        flex-direction: column;
+        flex: 1 1 250px;
+        text-align: center;
+
+        
+    
+    }
+    #header-01 {
+        flex-wrap: wrap;
+        flex: 0 0 300px;
+        
+    }
+    nav {
+        flex-flow: column wrap;
+        flex: 0 0 400px;
+        justify-content: center;
+        
+        
+    } 
+
+    .menu {
+        margin: auto;
+        margin-top: 8px;
+    }
+
     
 }
