@@ -12,7 +12,7 @@ header {
 
 
 header h1 {
-    border: 1px solid black;
+    
     flex: 0 0 200px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
 }
@@ -20,7 +20,7 @@ header h1 {
 
 
 nav {
-    border: 1px dotted black;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -39,6 +39,20 @@ nav {
     
     
 }
+@media (width <= 660px) {
+    
+    header h1 {
+        font-size: 3.5em;
+        flex-wrap: wrap;
+        flex: 1 1 375px;
+        text-align: center;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (width <= 644px) {
     
@@ -52,12 +66,12 @@ nav {
     }
     #header-01 {
         flex-wrap: wrap;
-        flex: 0 0 300px;
+        flex: 0 1 300px;
         
     }
     nav {
         flex-flow: column wrap;
-        flex: 0 0 400px;
+        flex: 0 1 400px;
         justify-content: center;
         
         
